@@ -9,7 +9,7 @@
             <div class="option-title">Layout Style:</div>
             <md-radio-group layout="row" layout-align="start start" layout-wrap
                             ng-model="vm.layoutStyle" ng-change="vm.updateLayoutStyle()">
-                <md-radio-button ng-repeat="layoutStyle in vm.layoutStyles" ng-value="layoutStyle.value">
+                <md-radio-button ng-repeat="layoutStyle in vm.layoutStyles" ng-value="layoutStyle.value"
                     <div layout="column" layout-align="center center">
                         <img ng-src="{{layoutStyle.figure}}">
                         <span class="text-center font-size-12 mt-8">{{layoutStyle.label}}</span>

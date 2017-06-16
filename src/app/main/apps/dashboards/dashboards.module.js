@@ -6,8 +6,8 @@
         .module('app.dashboards',
             [
                 'app.dashboards.project',
-                'app.dashboards.server',
-                'app.dashboards.analytics'
+                // 'app.dashboards.server',
+                // 'app.dashboards.analytics'
             ]
         )
         .config(config);
@@ -32,16 +32,16 @@
             title: 'Project',
             state: 'app.dashboards_project'
         });
-
-        msNavigationServiceProvider.saveItem('apps.dashboards.server', {
-            title: 'Server',
-            state: 'app.dashboards_server'
-        });
-
-        msNavigationServiceProvider.saveItem('apps.dashboards.analytics', {
-            title: 'Analytics',
-            state: 'app.dashboards_analytics'
-        });
+        //
+        // msNavigationServiceProvider.saveItem('apps.dashboards.server', {
+        //     title: 'Server',
+        //     state: 'app.dashboards_server'
+        // });
+        //
+        // msNavigationServiceProvider.saveItem('apps.dashboards.analytics', {
+        //     title: 'Analytics',
+        //     state: 'app.dashboards_analytics'
+        // });
     }
 
 })();

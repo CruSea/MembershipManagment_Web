@@ -26,7 +26,7 @@
             'app.ui.theme-colors',
             'app.ui.typography'
         ])
-        .config(config);
+        // .config(config);
 
     /** @ngInject */
     function config(msNavigationServiceProvider)

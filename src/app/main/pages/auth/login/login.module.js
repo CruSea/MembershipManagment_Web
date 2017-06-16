@@ -35,11 +35,11 @@
             weight: 1
         });
 
-        msNavigationServiceProvider.saveItem('pages.auth.login', {
-            title : 'Login',
-            state : 'app.pages_auth_login',
-            weight: 1
-        });
+        // msNavigationServiceProvider.saveItem('pages.auth.login', {
+        //     title : 'Login',
+        //     state : 'app.pages_auth_login',
+        //     weight: 1
+        // });
     }
 
 })();
