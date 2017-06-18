@@ -3,43 +3,42 @@
     'use strict';
 
     angular
-        .module('app.pages.auth.login', [])
+        .module('app.pages.partner.plogin', [])
         .config(config);
 
     /** @ngInject */
     function config($stateProvider, $translatePartialLoaderProvider, msNavigationServiceProvider)
     {
         // State
-        $stateProvider.state('app.pages_auth_login', {
-            url      : '/pages/auth/login',
+        $stateProvider.state('app.pages_partner_plogin', {
+            url      : '/pages/partner/plogin',
             views    : {
                 'main@'                       : {
                     templateUrl: 'app/core/layouts/content-only.html',
                     controller : 'MainController as vm'
                 },
                 'content@app.pages_auth_login': {
-                    templateUrl: 'app/main/pages/auth/login/login.html',
-                    controller : 'LoginController as vm'
+                    templateUrl: 'app/main/pages/partner/plogin/plogin.html',
+                    controller : 'PLoginController as vm'
                 }
             },
             bodyClass: 'login'
         });
 
         // Translation
-        $translatePartialLoaderProvider.addPart('app/main/pages/auth/login');
+        $translatePartialLoaderProvider.addPart('app/main/pages/partner/plogin');
 
         // Navigation
-        // msNavigationServiceProvider.saveItem('pages.auth', {
-        //     title : 'Authentication',
+        // msNavigationServiceProvider.saveItem('partner.plogin', {
+        //     title : 'Partners',
         //     icon  : 'icon-lock',
         //     weight: 1
         // });
-
-        // msNavigationServiceProvider.saveItem('pages.auth.plogin', {
-        //     title : 'Login',
-        //     state : 'app.pages_auth_login',
-        //     weight: 1
-        // });
+        msNavigationServiceProvider.saveItem('pages.plogin', {
+            title : 'Partner Login',
+            state : 'app.pages_partner_plogin',
+            weight: 1
+        });
     }
 
 })();

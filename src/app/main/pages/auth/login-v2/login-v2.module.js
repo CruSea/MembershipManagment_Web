@@ -11,25 +11,25 @@
     {
         // State
         $stateProvider.state('app.pages_auth_login-v2', {
-            url      : '/pages/auth/login-v2',
+            url      : '/pages/auth/plogin-v2',
             views    : {
                 'main@'                          : {
                     templateUrl: 'app/core/layouts/content-only.html',
                     controller : 'MainController as vm'
                 },
                 'content@app.pages_auth_login-v2': {
-                    templateUrl: 'app/main/pages/auth/login-v2/login-v2.html',
+                    templateUrl: 'app/main/pages/auth/plogin-v2/plogin-v2.html',
                     controller : 'LoginV2Controller as vm'
                 }
             },
-            bodyClass: 'login-v2'
+            bodyClass: 'plogin-v2'
         });
 
         // Translation
-        $translatePartialLoaderProvider.addPart('app/main/pages/auth/login-v2');
+        $translatePartialLoaderProvider.addPart('app/main/pages/auth/plogin-v2');
 
         // Navigation
-        msNavigationServiceProvider.saveItem('pages.auth.login-v2', {
+        msNavigationServiceProvider.saveItem('pages.auth.plogin-v2', {
             title : 'Login v2',
             state : 'app.pages_auth_login-v2',
             weight: 2

@@ -5,7 +5,7 @@
     angular
         .module('app.pages', [
             'app.pages.auth.login',
-            // 'app.pages.auth.login-v2',
+            // 'app.pages.auth.plogin-v2',
             'app.pages.auth.register',
             // 'app.pages.auth.register-v2',
             'app.pages.auth.forgot-password',
@@ -19,6 +19,7 @@
             // 'app.pages.profile',
             // 'app.pages.search',
             // 'app.pages.timeline'
+            'app.pages.partner.plogin'
         ])
         // .config(config);
 
